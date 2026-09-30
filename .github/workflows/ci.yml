@@ -47,10 +47,10 @@ jobs:
         
       - name: Build Docker image
         run: |
-          docker build -t ${{secrets.DOCKER_USERNAME}}/ django-crud:latest .
+          docker build -t ${{secrets.DOCKER_USERNAME}}/django-crud:latest .
 
       - name: Push Docker image
         run: |
-          docker push ${{ secrets.DOCKER_USERNAME }}/django-crud:latest
+          docker push ${{secrets.DOCKER_USERNAME}}/django-crud:latest
 
 
