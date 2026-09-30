@@ -51,6 +51,6 @@ jobs:
 
       - name: Push Docker image
         run: |
-          docker push ${{secrets.DOCKER_USERNAME}}/django-crud:latest
+          docker push ${{ secrets.DOCKER_USERNAME }}/django-crud:latest
 
 
